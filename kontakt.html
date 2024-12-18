@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mobile-navigation.js"></script> 
+</head>
+<body>
+    <header class="header header-kontakt">
+        <!-- Mobil navigation-->
+         <!-- Top Navigation Menu -->
+<div class="topnav">
+  <!--<a href="#home" class="active">Logo</a>-->
+  <a href="index.html" class="mobile-nav-logo-a"><div class="mobile-nav-logo"></div></a>
+  <div id="myLinks">
+    <a href="index.html">HJEM</a>
+    <a href="om.html">OM</a>
+    <a href="kontakt.html">KONTAKT</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <div class="burger-menu"></div>
+  </a>
+</div>
+        <!-- Navigation og logo -->
+        <nav class="nav-hide-on-mobile">
+            <div class="nav-container">
+                <a href="index.html"><img src="billeder2/logo2.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">  
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HJEM</a></li>
+                        <li><a href="om.html">OM</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Kontakt-sektion -->
+    <section class="contact">
+        <h1>Kontakt mig</h1>
+        <p>Udfyld formularen eller kontakt mig direkte.</p>
+        <form>
+            <input type="text" placeholder="Dit navn" required>
+            <input type="email" placeholder="Din email" required>
+            <textarea placeholder="Din besked" required></textarea>
+            <button type="submit">Send besked</button>
+        </form>
+        <div class="info">
+            <p>Email: casper01qwq@gmail.com</p>
+            <p>Telefon: 51845891</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; HANSENS'S MULTIMEDIEDESIGN</p>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="social">
+            <a href="tel:51845891">51845891</a>
+            <a href="mailto:casper01qwq@gmail.com">casper01qwq@gmail.com</a>
+        </div>
+    </footer>
+    <!-- JavaScript for mobilmenu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
